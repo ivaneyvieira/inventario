@@ -1,1 +1,0 @@
-width="400" height="400" embeddedWidth="100%" embeddedHeight="100%"

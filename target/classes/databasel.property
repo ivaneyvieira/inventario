@@ -1,6 +1,0 @@
-host=192.86.221.11
-database=coletor
-username=pintos
-password=pintos
-port=3306
-

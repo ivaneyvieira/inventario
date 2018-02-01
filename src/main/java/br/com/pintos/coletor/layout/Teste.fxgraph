@@ -1,9 +1,0 @@
-package br.com.pintos.coletor.layout
-
-import javafx.scene.layout.AnchorPane
-
-component Teste {
-	AnchorPane {
-		//TODO Add Nodes
-	}
-}
