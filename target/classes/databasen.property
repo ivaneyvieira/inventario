@@ -1,0 +1,6 @@
+host=acesso.pintos.com.br
+database=coletor
+username=pintos
+password=pintos
+port=23307
+
