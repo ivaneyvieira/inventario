@@ -1,3 +1,6 @@
+apply plugin: 'java'
+apply plugin: 'kotlin'
+
 buildscript {
   ext.kotlin_version = '1.2.21'
 
@@ -9,8 +12,18 @@ buildscript {
   }
 }
 
+jar {
+  manifest {
+    attributes 'Main-Class': 'br.com.pintos.coletor.lanterna.TelasKt'
+  }
+  // This line of code recursively collects and copies all of a project's files
+  // and adds them to the JAR itself. One can extend this task, to skip certain
+  // files or particular types at will
+  from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+}
+
 task wrapper(type: Wrapper) {
-  gradleVersion = '2.0' //version required
+  gradleVersion = '4.5' //version required
 }
 
 group 'Coletor'

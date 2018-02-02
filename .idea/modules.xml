@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/inventario.iml" filepath="$PROJECT_DIR$/inventario.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/inventario_main.iml" filepath="$PROJECT_DIR$/.idea/modules/inventario_main.iml" group="inventario" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/inventario_test.iml" filepath="$PROJECT_DIR$/.idea/modules/inventario_test.iml" group="inventario" />
     </modules>
   </component>
 </project>
