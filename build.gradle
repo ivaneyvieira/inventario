@@ -27,6 +27,8 @@ dependencies {
   compile "org.jetbrains.exposed:exposed:0.9.1"
   // https://mvnrepository.com/artifact/com.googlecode.lanterna/lanterna
   compile "com.googlecode.lanterna:lanterna:3.0.0"
+  // https://mvnrepository.com/artifact/mysql/mysql-connector-java
+  compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.45'
 }
 
 compileKotlin {

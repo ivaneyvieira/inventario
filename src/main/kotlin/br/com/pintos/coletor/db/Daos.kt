@@ -90,51 +90,51 @@ class Loja(id: EntityID<Long>) : LongEntity(id) {
 class Coleta(id: EntityID<Long>) : LongEntity(id) {
   companion object : LongEntityClass<Coleta>(Coletas)
 
-  var numleitura
-  var Inventario_id
-  var lote_id
-  var usuario_id
-  var coletor
-  var status
-  var version
+  var numleitura by Coletas.numleitura
+  var Inventario_id by Coletas.Inventario_id
+  var lote by Lote referencedOn Coletas.lote
+  var usuario by Usuario referencedOn Coletas.usuario
+  var coletor by Coletas.coletor
+  var status by Coletas.status
+  var version by Coletas.version
 }
 
 class Usuario(id: EntityID<Long>) : LongEntity(id) {
   companion object : LongEntityClass<Usuario>(Usuarios)
 
-  var matricula
-  var nome
-  var senha
-  var apelido
-  var version
+  var matricula by Usuarios.matricula
+  var nome by Usuarios.nome
+  var senha by Usuarios.senha
+  var apelido by Usuarios.apelido
+  var version by Usuarios.version
 }
 
 class Leitura(id: EntityID<Long>) : LongEntity(id) {
   companion object : LongEntityClass<Leitura>(Leituras)
 
-  var hora
-  var leitura
-  var observacao
-  var quant
-  var status
-  var coleta_id
-  var produto_id
-  var version
+  var hora by Leituras.hora
+  var leitura by Leituras.leitura
+  var observacao by Leituras.observacao
+  var quant by Leituras.quant
+  var status by Leituras.status
+  var coleta by Coleta referencedOn Leituras.coleta
+  var produto by Produto referencedOn Leituras.produto
+  var version by Leituras.version
 }
 
 class Produto(id: EntityID<Long>) : LongEntity(id) {
   companion object : LongEntityClass<Produto>(Produtos)
 
-  var barcode
-  var codigo
-  var descricao
-  var duplicado
-  var foralinha
-  var grade
-  var usoconsumo
-  var cl_id
-  var fornecedor_id
-  var version
+  var barcode by Produtos.barcode
+  var codigo by Produtos.codigo
+  var descricao by Produtos.descricao
+  var duplicado by Produtos.duplicado
+  var foralinha by Produtos.foralinha
+  var grade by Produtos.grade
+  var usoconsumo by Produtos.usoconsumo
+  var cl_id by Produtos.cl_id
+  var fornecedor_id by Produtos.fornecedor_id
+  var version by Produtos.version
 }
 
 
