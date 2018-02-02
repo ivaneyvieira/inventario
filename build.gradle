@@ -9,6 +9,10 @@ buildscript {
   }
 }
 
+task wrapper(type: Wrapper) {
+  gradleVersion = '2.0' //version required
+}
+
 group 'Coletor'
 version '1.0-SNAPSHOT'
 
