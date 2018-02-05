@@ -37,7 +37,7 @@ abstract class ColWindow(
         Window.Hint.FIXED_POSITION,
         Window.Hint.FIXED_SIZE,
         Window.Hint.NO_DECORATIONS,
-        Window.Hint.NO_POST_RENDERING,
+       Window.Hint.NO_POST_RENDERING,
         Window.Hint.MODAL
                    )
             )
